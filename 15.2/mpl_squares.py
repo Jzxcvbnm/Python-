@@ -5,8 +5,11 @@ plt.rcParams['font.sans-serif'] = ['KaiTi']#显示中文标签
 input_values = [1,2,3,4,5]
 squares=[1,4,9,16,25]
 
-fig,ax=plt.subplots()#变量fig表示整张图片,变量ax表示图片中的各个图表.subplots函数可在一张图片绘制一个或者多个图表
-ax.plot(input_values,squares,linewidth=1)#方法plot根据给定数据以有意义的方式绘制图表
+#变量fig表示整张图片,变量ax表示图片中的各个图表.subplots函数可在一张图片绘制一个或者多个图表
+fig,ax=plt.subplots()
+
+#方法plot根据给定数据以有意义的方式绘制图表
+ax.plot(input_values,squares,linewidth=1)
 
 #设置图表标题并给坐标轴加上标签
 ax.set_title("平方数",fontsize=24)
